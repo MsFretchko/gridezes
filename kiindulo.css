@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+#piros {
+    grid-area: a;
+    background-color: red;
+}
+#kek{
+    grid-area: b;
+    background-color: blue;
+}
+#zold {
+    grid-area: c;
+    background-color: green;
+}
+#narancs {
+    grid-area: d;
+    background-color: orange;
+}
+#lila {
+    grid-area: e;
+    background-color: blueviolet;
+}
+#turk {
+    grid-area: f;
+    background-color: aquamarine;
+}
+#sarga {
+    grid-area: g;
+    background-color: yellow;
+}
+#voros{
+    grid-area: h;
+    background-color: brown;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a a b c" "d e e c" "f e e g" "h h h h";
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
+
+}
+div{
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+}
